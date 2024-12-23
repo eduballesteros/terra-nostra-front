@@ -1,0 +1,149 @@
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: var(--color-light);
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  flex-wrap: wrap;
+}
+
+/* Logo */
+.header .logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.header .logo img {
+  max-width: 60px;
+  height: auto;
+}
+
+.header .logo h3 {
+  font-family: "Libre Baskerville", serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--color-primary);
+  margin: 0;
+}
+
+/* Navigation */
+.header .navigation ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  margin: 0;
+  padding: 0;
+}
+
+.header .navigation a {
+  font-family: "Libre Baskerville", serif;
+  font-weight: 400;
+  font-size: 1.1rem;
+  color: var(--color-primary);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.header .navigation a:hover {
+  color: var(--color-accent);
+}
+
+/* Header Icons */
+.header .header-icons {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.header .header-icons a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background-color: var(--color-primary);
+  border-radius: 50%;
+  transition: background-color 0.3s ease;
+}
+
+.header .header-icons a:hover {
+  background-color: var(--color-secondary);
+}
+
+.header .header-icons img {
+  width: 20px;
+  height: 20px;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+  /* Centrar todo */
+  .header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 1rem;
+  }
+
+  /* Logo */
+  .header .logo {
+    flex-direction: column; /* Apilar imagen y texto */
+    gap: 0.25rem;
+    margin-bottom: 1rem;
+  }
+
+  .header .logo img {
+    max-width: 50px;
+  }
+
+  .header .logo h3 {
+    font-size: 1.2rem;
+  }
+
+  /* Navegación */
+  .header .navigation ul {
+    flex-direction: column; /* Apilar los enlaces */
+    gap: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  /* Iconos */
+  .header .header-icons {
+    gap: 1rem;
+  }
+
+  .header .header-icons a {
+    width: 35px;
+    height: 35px;
+  }
+
+  .header .header-icons img {
+    width: 18px;
+    height: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Más ajustes para pantallas muy pequeñas */
+  .header {
+    padding: 0.5rem;
+  }
+
+  .header .logo img {
+    max-width: 40px;
+  }
+
+  .header .logo h3 {
+    font-size: 1rem;
+  }
+
+  .header .navigation ul {
+    gap: 0.5rem;
+  }
+
+  .header .header-icons {
+    gap: 0.5rem;
+  }
+}

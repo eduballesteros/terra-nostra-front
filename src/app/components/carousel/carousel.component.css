@@ -1,0 +1,9 @@
+/* Establecer la altura del contenedor del carousel */
+.custom-carousel {
+  max-width: 70%;
+  max-height: 40%;
+  margin: auto;
+  overflow: hidden; /* Evitar que el contenido se desborde */
+  margin-top: 50px;
+}
+
