@@ -1,0 +1,45 @@
+.features-container {
+  margin-top: 20px;
+  text-align: center;
+  width: 80%; /* Reducir el ancho del contenedor principal */
+  margin-left: auto;
+  margin-right: auto;
+}
+  
+.feature-box {
+  margin-bottom: 15px; /* Reducir el margen inferior */
+  padding: 8px; /* Reducir el padding */
+  background-color: var(--color-light);
+  border-radius: 8px; /* Reducir el radio de borde */
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1); /* Ajustar la sombra */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+  
+.feature-box:hover {
+  transform: translateY(-4px); /* Ajustar la transformación */
+  box-shadow: 0 5px 8px rgba(0, 0, 0, 0.15); /* Ajustar la sombra */
+}
+  
+.feature-icon {
+  max-width: 80px; /* Reducir el tamaño máximo del icono */
+  margin-bottom: 8px; /* Reducir el margen inferior */
+}
+  
+.feature-content {
+  font-size: 0.9rem; /* Reducir el tamaño de fuente */
+  font-weight: bold;
+  color: var(--color-secondary);
+  margin-bottom: 8px; /* Reducir el margen inferior */
+}
+  
+.feature-link {
+  font-size: 0.8rem; /* Reducir el tamaño de fuente */
+  color: var(--color-accent);
+  text-decoration: none;
+  font-weight: bold;
+}
+  
+.feature-link:hover {
+  text-decoration: underline;
+  color: var(--color-warning);
+}

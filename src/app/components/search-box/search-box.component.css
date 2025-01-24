@@ -1,0 +1,57 @@
+.search-box {
+  max-width: 600px; /* Ancho máximo */
+  margin: 30px auto; /* Centrado horizontal y espaciado vertical */
+  padding: 10px; /* Espaciado interno */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+  background-color: var(--color-light); /* Fondo blanco suave */
+}
+
+/* Campo de entrada */
+.search-input {
+  width: 100%; /* Ancho completo */
+  padding: 12px 15px; /* Espaciado interno */
+  font-size: 16px; /* Tamaño del texto */
+  color: var(--color-secondary); /* Texto en verde oliva */
+  border: 2px solid var(--color-secondary); /* Borde en verde oliva */
+  outline: none; /* Sin borde adicional */
+  border-radius: 8px; /* Bordes redondeados */
+  background-color: #ffffff; /* Fondo blanco */
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra interior */
+  transition: box-shadow 0.3s ease, border-color 0.3s ease; /* Animación suave */
+}
+
+/* Estilo del campo al enfocar */
+.search-input:focus {
+  border-color: var(--color-warning); /* Borde en verde menta */
+  box-shadow: 0 0 8px var(--color-warning); /* Brillo al enfocar */
+}
+
+/* Ajustes en pantallas pequeñas */
+@media (max-width: 576px) {
+  .search-box {
+    max-width: 90%; /* Ancho reducido */
+    padding: 8px; /* Espaciado interno menor */
+  }
+
+  .search-input {
+    font-size: 14px; /* Texto más pequeño */
+    padding: 10px; /* Ajuste de espaciado */
+  }
+}
+
+
+.text {
+  font-family: "Libre Baskerville", serif;
+  font-weight: 400;
+  font-size: 3.1rem;
+  margin: 30px auto; /* Centrado horizontal y espaciado vertical */
+  color: var(--color-primary);
+  text-align: center; /* Centrado del texto */
+  text-decoration: none;
+  transition: color 0.3s ease, transform 0.3s ease; /* Animación suave */
+}
+
+.text:hover {
+  color: var(--color-secondary); /* Cambio de color al pasar el ratón */
+  transform: scale(1.05); /* Aumento de tamaño al pasar el ratón */
+}
