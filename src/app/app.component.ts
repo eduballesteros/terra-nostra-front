@@ -6,11 +6,10 @@ import { SearchBoxComponent } from './features/landing-page/components/search-bo
 import { InfoComponent } from './features/landing-page/components/info/info.component';
 
 @Component({
-  selector: 'app-root',
-  standalone: true,
-  imports: [RouterOutlet, NavbarComponent, CarouselComponent, SearchBoxComponent, InfoComponent],
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+    selector: 'app-root',
+    imports: [RouterOutlet, NavbarComponent, CarouselComponent, SearchBoxComponent, InfoComponent],
+    templateUrl: './app.component.html',
+    styleUrl: './app.component.css'
 })
 export class AppComponent {
   title = 'terra-nostra';
