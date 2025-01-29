@@ -1,6 +1,6 @@
 .custom-carousel {
   max-width: 100%; /* Asegura que el carrusel ocupe todo el ancho disponible */
-  max-height: 30vh; /* Ensures the carousel has a maximum height */
+  max-height: 45vh; /* Ensures the carousel has a maximum height */
   overflow: hidden; /* Evita que el contenido desborde */
   margin-top: 1rem;
   display: flex;
