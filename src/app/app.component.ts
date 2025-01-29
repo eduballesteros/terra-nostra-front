@@ -1,13 +1,9 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
-import { NavbarComponent } from "./features/landing-page/components/navbar/navbar.component"; 
-import { CarouselComponent } from "./features/landing-page/components/carousel/carousel.component";
-import { SearchBoxComponent } from './features/landing-page/components/search-box/search-box.component';
-import { InfoComponent } from './features/landing-page/components/info/info.component';
-
+import { RouterModule } from '@angular/router';
 @Component({
     selector: 'app-root',
-    imports: [RouterOutlet, NavbarComponent, CarouselComponent, SearchBoxComponent, InfoComponent],
+    standalone: true,
+    imports: [RouterModule ],
     templateUrl: './app.component.html',
     styleUrl: './app.component.css'
 })

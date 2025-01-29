@@ -1,0 +1,81 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+  width: 50%; /* Ocupa la mitad derecha de la pantalla */
+  position: fixed; /* Usamos 'fixed' para que se quede en su lugar */
+  top: 0;
+  right: 0; /* Alinea al lado derecho */
+  z-index: 10; /* Asegura que este componente esté por encima de otros */
+}
+
+.form-container {
+  position: relative;
+  width: 100%; /* Hace que el formulario ocupe todo el contenedor */
+  height: 300px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.form-toggle {
+  display: flex;
+  justify-content: space-between;
+}
+
+.form-toggle button {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  background-color: #f4f4f4;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.form-toggle button.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.form-content {
+  position: absolute;
+  top: 50px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 0.3s ease;
+}
+
+.login-form, .register-form {
+  width: 100%;
+  text-align: center;
+}
+
+.login-form input, .register-form input {
+  width: 80%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.login-form button, .register-form button {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+/* Transparencia */
+.form-content {
+  opacity: 0.5;
+}
+
+.form-content .active {
+  opacity: 1;
+}

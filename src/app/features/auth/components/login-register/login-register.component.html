@@ -1,0 +1,31 @@
+<div class="container">
+  <div class="form-container">
+    <div class="form-toggle">
+      <button (click)="showLogin()" [class.active]="isLogin">Login</button>
+      <button (click)="showRegister()" [class.active]="!isLogin">Register</button>
+    </div>
+
+    <div class="form-content">
+      <div *ngIf="isLogin" class="login-form">
+        <h2>Login</h2>
+        <form>
+          <!-- Tu formulario de inicio de sesión aquí -->
+          <input type="text" placeholder="Username">
+          <input type="password" placeholder="Password">
+          <button type="submit">Login</button>
+        </form>
+      </div>
+
+      <div *ngIf="!isLogin" class="register-form">
+        <h2>Register</h2>
+        <form>
+          <!-- Tu formulario de registro aquí -->
+          <input type="text" placeholder="Username">
+          <input type="password" placeholder="Password">
+          <input type="email" placeholder="Email">
+          <button type="submit">Register</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
